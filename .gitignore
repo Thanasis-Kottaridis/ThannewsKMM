@@ -9,6 +9,7 @@ captures
 local.properties
 xcuserdata
 
+# Android / Kotlin related git ignores
 .idea/shelf
 /confluence/target
 /dependencies/repo
