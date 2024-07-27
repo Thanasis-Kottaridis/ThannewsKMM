@@ -11,11 +11,11 @@ kotlin {
             }
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
-        iosSimulatorArm64()
+        iosSimulatorArm64(),
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
@@ -25,8 +25,23 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            //put your multiplatform dependencies here
+            // put your multiplatform dependencies here
+
+            // Kotlin Coroutines
+            implementation(libs.kotlinx.coroutines.core)
         }
+
+        androidMain.dependencies {
+            // put your android native dependencies here
+
+            // Android View Model Dependency
+            implementation(libs.lifecycle.viewmodel.ktx)
+        }
+
+        iosMain.dependencies {
+            // put your iOS native dependencies here
+        }
+
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
