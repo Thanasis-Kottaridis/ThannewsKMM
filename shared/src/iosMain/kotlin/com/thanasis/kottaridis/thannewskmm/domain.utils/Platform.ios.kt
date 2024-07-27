@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm
+package com.thanasis.kottaridis.thannewskmm.domain.utils
 
 import platform.Foundation.NSLog
 import platform.UIKit.UIDevice

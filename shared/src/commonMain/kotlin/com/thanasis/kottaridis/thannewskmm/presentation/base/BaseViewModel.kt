@@ -10,6 +10,6 @@ import kotlinx.coroutines.CoroutineScope
  * @param scope: The CoroutineScope that will be used for the excecution of the tasks in this viewModel.
  * @param
  */
-expect open class BaseViewModel {
+expect open class BaseViewModel() {
     val scope: CoroutineScope
 }

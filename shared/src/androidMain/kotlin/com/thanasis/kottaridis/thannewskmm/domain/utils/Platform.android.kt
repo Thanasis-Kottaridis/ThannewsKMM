@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm
+package com.thanasis.kottaridis.thannewskmm.domain.utils
 
 import android.content.res.Resources
 import android.os.Build

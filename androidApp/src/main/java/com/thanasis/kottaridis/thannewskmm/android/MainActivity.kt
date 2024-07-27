@@ -6,8 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
-import com.thanasis.kottaridis.thannewskmm.Platform
 import com.thanasis.kottaridis.thannewskmm.android.about.AboutScreen
+import com.thanasis.kottaridis.thannewskmm.domain.utils.Platform
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

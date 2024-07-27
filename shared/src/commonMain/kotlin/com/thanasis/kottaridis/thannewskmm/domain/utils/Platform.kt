@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm
+package com.thanasis.kottaridis.thannewskmm.domain.utils
 
 /**
  * **Expect Keyword**

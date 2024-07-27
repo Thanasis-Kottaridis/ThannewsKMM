@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.thanasis.kottaridis.thannewskmm.Platform
 import com.thanasis.kottaridis.thannewskmm.android.MyApplicationTheme
+import com.thanasis.kottaridis.thannewskmm.domain.utils.Platform
 
 @Composable
 fun AboutScreen() {
