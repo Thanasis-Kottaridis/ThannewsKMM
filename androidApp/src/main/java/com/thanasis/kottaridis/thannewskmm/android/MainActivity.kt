@@ -3,18 +3,18 @@ package com.thanasis.kottaridis.thannewskmm.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
-import com.thanasis.kottaridis.thannewskmm.android.about.AboutScreen
-import com.thanasis.kottaridis.thannewskmm.domain.utils.Platform
+import com.thanasis.kottaridis.thannewskmm.android.articles.ArticlesScreen
+import com.thanasis.kottaridis.thannewskmm.presentation.articles.ArticlesViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Test Platform Log
-        Platform().logSystemInfo()
+        val articlesViewModel: ArticlesViewModel by viewModels()
 
         setContent {
             MyApplicationTheme {
@@ -22,7 +22,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    AboutScreen()
+                    ArticlesScreen(
+                        onAboutButtonClick = { /*TODO*/ },
+                        articlesViewModel = articlesViewModel,
+                    )
                 }
             }
         }

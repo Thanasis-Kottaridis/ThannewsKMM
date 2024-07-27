@@ -37,10 +37,18 @@ android {
 }
 
 dependencies {
+    // shared kmm module import
     implementation(projects.shared)
+
+    // jetpack compose imports
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+
+    // coin for async loading images from web
+    implementation(libs.coil.compose)
+
+    // debug tools
     debugImplementation(libs.compose.ui.tooling)
 }

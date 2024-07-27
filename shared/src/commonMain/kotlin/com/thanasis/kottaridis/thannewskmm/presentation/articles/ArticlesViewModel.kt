@@ -34,7 +34,7 @@ class ArticlesViewModel : BaseViewModel() {
     }
 
     private suspend fun fetchArticles(): List<Article> {
-        delay(500)
+        delay(1500)
         return getMockArticles()
     }
 
