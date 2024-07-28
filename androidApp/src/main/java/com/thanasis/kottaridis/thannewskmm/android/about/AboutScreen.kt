@@ -40,8 +40,8 @@ private fun AboutContentView() {
     ) {
         items(Platform().toItemsList()) { row ->
             AboutRowView(
-                title = row.first,
-                subtitle = row.second,
+                title = row.title,
+                subtitle = row.subtitle,
             )
         }
     }

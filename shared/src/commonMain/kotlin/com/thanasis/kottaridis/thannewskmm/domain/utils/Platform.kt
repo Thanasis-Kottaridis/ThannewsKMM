@@ -1,5 +1,7 @@
 package com.thanasis.kottaridis.thannewskmm.domain.utils
 
+import com.thanasis.kottaridis.thannewskmm.domain.models.platform.PlatformInfo
+
 /**
  * **Expect Keyword**
  *
@@ -20,12 +22,12 @@ interface BasePlatform {
 
     fun logSystemInfo()
 
-    fun toItemsList(): List<Pair<String, String>> =
+    fun toItemsList(): List<PlatformInfo> =
         listOf(
-            "OS Name" to osName,
-            "OS Version" to osVersion,
-            "Device Model" to deviceModel,
-            "Density" to density.toString(),
+            PlatformInfo(1, "OS Name", osName),
+            PlatformInfo(2, "OS Version", osVersion),
+            PlatformInfo(3, "Device Model", deviceModel),
+            PlatformInfo(4, "Density", density.toString()),
         )
 }
 

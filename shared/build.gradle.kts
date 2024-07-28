@@ -38,9 +38,9 @@ kotlin {
             implementation(libs.lifecycle.viewmodel.ktx)
         }
 
-        iosMain.dependencies {
-            // put your iOS native dependencies here
-        }
+//        iosMain.dependencies {
+//            // put your iOS native dependencies here
+//        }
 
         commonTest.dependencies {
             implementation(libs.kotlin.test)
