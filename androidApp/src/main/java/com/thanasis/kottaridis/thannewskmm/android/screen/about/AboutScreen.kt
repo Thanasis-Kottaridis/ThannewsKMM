@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm.android.about
+package com.thanasis.kottaridis.thannewskmm.android.screen.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

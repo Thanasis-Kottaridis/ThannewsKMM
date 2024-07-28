@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm.android.articles
+package com.thanasis.kottaridis.thannewskmm.android.screen.articles
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
