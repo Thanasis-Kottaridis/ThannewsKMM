@@ -13,6 +13,10 @@ class ArticlesViewModelWrapper: ObservableObject {
     
     @Published var state: ArticlesState
     
+    init(state: ArticlesState) {
+        self.state = state
+    }
+    
 }
 
 extension BaseViewModel {
