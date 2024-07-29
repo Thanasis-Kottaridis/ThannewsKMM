@@ -37,7 +37,7 @@ open class Coordinator {
         navigationController: UINavigationController? = nil,
         childCoordinators: [String: Coordinator] = [:],
         parentCoordinator: (Coordinator)? = nil,
-        doStart: Bool = true
+        doStart: Bool = false
     ) {
         self.navigationController = navigationController ?? UINavigationController()
         self.parentCoordinator = parentCoordinator

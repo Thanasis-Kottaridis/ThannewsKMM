@@ -1,18 +1,22 @@
 package com.thanasis.kottaridis.thannewskmm.presentation.articles
 
 import com.thanasis.kottaridis.thannewskmm.domain.models.articles.Article
-import com.thanasis.kottaridis.thannewskmm.presentation.base.BaseViewModel
+import com.thanasis.kottaridis.thannewskmm.presentation.base.viewmodel.BaseViewModel
+import com.thanasis.kottaridis.thannewskmm.presentation.base.viewmodel.KmmStateFlow
+import com.thanasis.kottaridis.thannewskmm.presentation.base.viewmodel.asKmmStateFlow
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class ArticlesViewModel : BaseViewModel() {
-    private val mState: MutableStateFlow<ArticlesState> = MutableStateFlow(ArticlesState())
-    val state: StateFlow<ArticlesState> get() = mState
+    private val mState: MutableStateFlow<ArticlesState> = MutableStateFlow(ArticlesState.default())
+    val state: KmmStateFlow<ArticlesState> get() = mState.asKmmStateFlow()
 
-    init {
-        getArticles()
+    fun onTriggerEvent(event: ArticleEvent) {
+        when (event) {
+            is ArticleEvent.FetchData -> getArticles()
+            is ArticleEvent.GoToAboutScreen -> { }
+        }
     }
 
     private fun getArticles() {

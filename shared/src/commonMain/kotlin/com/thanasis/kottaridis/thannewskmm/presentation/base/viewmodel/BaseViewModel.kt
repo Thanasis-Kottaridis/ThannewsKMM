@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm.presentation.base
+package com.thanasis.kottaridis.thannewskmm.presentation.base.viewmodel
 
 import kotlinx.coroutines.CoroutineScope
 

@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         // create a base UIWindow and activate it
-        window.backgroundColor = .white
+        window.backgroundColor = .red
         window.rootViewController = mainCoordinator.navigationController
         window.makeKeyAndVisible()
         

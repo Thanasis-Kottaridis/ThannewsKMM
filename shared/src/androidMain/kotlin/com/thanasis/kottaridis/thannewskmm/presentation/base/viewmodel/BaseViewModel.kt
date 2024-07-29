@@ -1,4 +1,4 @@
-package com.thanasis.kottaridis.thannewskmm.presentation.base
+package com.thanasis.kottaridis.thannewskmm.presentation.base.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
