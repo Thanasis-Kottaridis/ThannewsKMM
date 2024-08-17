@@ -12,6 +12,11 @@ class ArticlesViewModel : BaseViewModel() {
     private val mState: MutableStateFlow<ArticlesState> = MutableStateFlow(ArticlesState.default())
     val state: KmmStateFlow<ArticlesState> get() = mState.asKmmStateFlow()
 
+    init {
+        // perform initial call
+        onTriggerEvent(ArticleEvent.FetchData)
+    }
+
     fun onTriggerEvent(event: ArticleEvent) {
         when (event) {
             is ArticleEvent.FetchData -> getArticles()

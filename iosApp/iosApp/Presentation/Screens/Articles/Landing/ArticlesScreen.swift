@@ -27,8 +27,6 @@ struct ArticlesScreen: View {
                 content
             }
             
-        }.onAppear{
-            self.viewModel.onTriggerEvent(event: .FetchData())
         }
     }
     
