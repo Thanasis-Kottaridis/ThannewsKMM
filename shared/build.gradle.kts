@@ -29,6 +29,9 @@ kotlin {
 
             // Kotlin Coroutines
             implementation(libs.kotlinx.coroutines.core)
+
+            // Ktor
+            implementation(libs.ktor.client.core)
         }
 
         androidMain.dependencies {
@@ -36,11 +39,15 @@ kotlin {
 
             // Android View Model Dependency
             implementation(libs.lifecycle.viewmodel.ktx)
+
+            // Android Ktor
+            implementation(libs.ktor.client.okhttp)
         }
 
-//        iosMain.dependencies {
-//            // put your iOS native dependencies here
-//        }
+        iosMain.dependencies {
+            // put your iOS native dependencies here
+            implementation(libs.ktor.client.darwin)
+        }
 
         commonTest.dependencies {
             implementation(libs.kotlin.test)
