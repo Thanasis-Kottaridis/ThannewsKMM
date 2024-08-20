@@ -13,8 +13,7 @@ public class ArticlesCoordinator: Coordinator {
     
     public override func start() {
         super.start()
-//        goToArticlesLanding()
-        testKtor()
+        goToArticlesLanding()
     }
 }
 
@@ -59,6 +58,7 @@ extension ArticlesCoordinator: ArticlesActionHandler {
     }
 }
 
+// TODO: - Remove Test IMPL.
 import SwiftUI
 
 struct ContentView: View {
