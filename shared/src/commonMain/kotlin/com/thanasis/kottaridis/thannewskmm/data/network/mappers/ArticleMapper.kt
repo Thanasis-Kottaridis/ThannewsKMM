@@ -1,6 +1,7 @@
 package com.thanasis.kottaridis.thannewskmm.data.network.mappers
 
 import com.thanasis.kottaridis.thannewskmm.data.network.dto.ArticleDto
+import com.thanasis.kottaridis.thannewskmm.data.utils.DateMapper
 import com.thanasis.kottaridis.thannewskmm.domain.models.articles.Article
 import com.thanasis.kottaridis.thannewskmm.domain.utils.helpers.DomainMapper
 
@@ -20,7 +21,7 @@ object ArticleMapper : DomainMapper<Article, ArticleDto> {
         Article(
             title = domainModel.title,
             description = domainModel.desc ?: DEFAULT_DESCRIPTION,
-            date = domainModel.date,
+            date = DateMapper.getDaysAgoString(domainModel.date),
             imageUrl = domainModel.imageUrl ?: DEFAULT_IMAGE_URL,
         )
 }

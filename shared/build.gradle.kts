@@ -38,6 +38,9 @@ kotlin {
             implementation(libs.ktor.client.logging)
             // todo check if needed...
             implementation(libs.napier)
+
+            // Utils
+            implementation(libs.kotlinx.datetime)
         }
 
         androidMain.dependencies {
