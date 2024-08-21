@@ -42,6 +42,6 @@ struct ArticlesScreen: View {
     }
 }
 
-#Preview {
-    ArticlesScreen(viewModel: ArticlesViewModelWrapper(viewModel: ArticlesViewModel()))
-}
+//#Preview {
+//    ArticlesScreen(viewModel: ArticlesViewModelWrapper(viewModel: ArticlesViewModel()))
+//}

@@ -46,8 +46,12 @@ dependencies {
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
 
-    // coin for async loading images from web
+    // coil for async loading images from web
     implementation(libs.coil.compose)
+
+    // Koin for DI
+    implementation(libs.koin.android)
+    implementation(libs.koin.android.compose)
 
     // debug tools
     debugImplementation(libs.compose.ui.tooling)

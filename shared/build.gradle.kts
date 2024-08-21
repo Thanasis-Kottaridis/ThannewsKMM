@@ -39,6 +39,9 @@ kotlin {
             // todo check if needed...
             implementation(libs.napier)
 
+            // Koin
+            implementation(libs.koin.core)
+
             // Utils
             implementation(libs.kotlinx.datetime)
         }

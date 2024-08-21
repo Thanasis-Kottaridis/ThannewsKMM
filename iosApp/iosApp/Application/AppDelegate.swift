@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import shared
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // init shared module dependency injection.
+        KoinInitializerKt.doInitKoin()
         return true
     }
 
