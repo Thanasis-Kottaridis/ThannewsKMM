@@ -20,8 +20,12 @@ public class ArticlesCoordinator: Coordinator {
 extension ArticlesCoordinator: ArticlesActionHandler {
     
     public func goToArticlesLanding() {
-        let viewModel = ArticlesViewModelWrapper(viewModel: ArticlesViewModel(useCase: ArticlesInjector().articlesUseCase))
-        let screen = ArticlesScreen(viewModel: viewModel)
+        let viewModel = ArticlesViewModel(
+            useCase: ArticlesInjector().articlesUseCase,
+            actionHandler: self
+        )
+        let wrapper = ArticlesViewModelWrapper(viewModel: viewModel)
+        let screen = ArticlesScreen(viewModel: wrapper)
         navigate(
             to: screen,
             with: .push,

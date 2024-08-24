@@ -25,7 +25,7 @@ struct ArticleItemView: View {
             if let image = phase.image {
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
-            } else if let error = phase.error {
+            } else if phase.error != nil {
                 Text("Image Load Error")
             } else {
                 ProgressView()

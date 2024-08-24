@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#1EC7FA</color>
+    <color name="brand_secondary">#1E6FF1</color>
+    <color name="tint_primary">#000000</color>
+    <color name="tint_secondary">#7F7F7F</color>
+    <color name="tint_tertiary">#BFBFBF</color>
+    <color name="tint_white">#FFFFFF</color>
+    <color name="tint_red">#FF3B30</color>
+    <color name="tint_blue">#007AFF</color>
+    <color name="tint_yellow">#FFCC00</color>
+    <color name="tint_green">#34C759</color>
+    <color name="fill_primary">#D8D8D8</color>
+    <color name="fill_secondary">#BFBFBF</color>
+    <color name="background_default_primary">#F2F2F2</color>
+    <color name="background_grouped_primary">#FFFFFF</color>
+    <color name="background_grouped_secondary">#FFFFFF</color>
+    <color name="seperator_primary">#D8D8D8</color>
+    <color name="shadow_primary">#40000000</color>
+    <color name="effect_blur">#61F0F0F0</color>
+    <color name="effect_shadow">#80F0F0F0</color>
+
+    <color name="transparent">#0000</color>
+</resources>

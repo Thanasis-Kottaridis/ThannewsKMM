@@ -11,6 +11,7 @@ import kotlinx.coroutines.launch
 
 class ArticlesViewModel(
     private val useCase: ArticlesUseCase,
+    private val actionHandler: ArticlesActionHandler,
 ) : BaseViewModel() {
     private val mState: MutableStateFlow<ArticlesState> = MutableStateFlow(ArticlesState.default())
     val state: KmmStateFlow<ArticlesState> get() = mState.asKmmStateFlow()
@@ -23,7 +24,7 @@ class ArticlesViewModel(
     fun onTriggerEvent(event: ArticleEvent) {
         when (event) {
             is ArticleEvent.FetchData -> getArticles()
-            is ArticleEvent.GoToAboutScreen -> {}
+            is ArticleEvent.GoToAboutScreen -> actionHandler.goToAboutScreen()
         }
     }
 

@@ -1,7 +1,8 @@
-package com.thanasis.kottaridis.thannewskmm.android
+package com.thanasis.kottaridis.thannewskmm.android.application
 
 import android.app.Application
-import com.thanasis.kottaridis.thannewskmm.android.di.viewModelsModule
+import com.thanasis.kottaridis.thannewskmm.android.presentation.di.coordinatorsModule
+import com.thanasis.kottaridis.thannewskmm.android.presentation.di.viewModelsModule
 import com.thanasis.kottaridis.thannewskmm.core.di.sharedKoinModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -17,7 +18,7 @@ class BaseApplication : Application() {
 
     private fun initKoin() {
         // 1. collect all modules that we want to instantiate.
-        val modules = sharedKoinModules + viewModelsModule
+        val modules = sharedKoinModules + viewModelsModule + coordinatorsModule
 
         // 2. start koin by providing context and all target modules
         startKoin {
